@@ -1,0 +1,32 @@
+# API Keys
+NOAA_API_KEY=your_noaa_api_key_here
+NASA_API_KEY=your_nasa_api_key_here
+
+# Database Configuration
+DATABASE_URL=sqlite:///sea_level_data.db
+
+# Model Configuration
+MODEL_PATH=./data/models/
+MODEL_RETRAIN_INTERVAL_DAYS=7
+
+# Logging
+LOG_LEVEL=INFO
+LOG_FILE=logs/sea_level_predictor.log
+
+# Server Configuration
+FLASK_ENV=development
+FLASK_DEBUG=True
+PORT=5000
+DASH_PORT=8050
+
+# Data Collection
+DATA_COLLECTION_INTERVAL_HOURS=6
+HISTORICAL_DATA_YEARS=10
+
+# Prediction Configuration
+PREDICTION_DAYS=30
+CONFIDENCE_INTERVAL=0.95
+
+# External APIs
+NOAA_BASE_URL=https://api.tidesandcurrents.noaa.gov/api/prod/datagetter
+NASA_BASE_URL=https://api.nasa.gov/planetary/earth/assets 
